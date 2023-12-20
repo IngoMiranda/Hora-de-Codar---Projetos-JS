@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 16px;
     height: 100vh;
     background-color: #7235FF;
     background-image: url(/Tabuada/img/quadro.png);
