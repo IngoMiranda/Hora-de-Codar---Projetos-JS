@@ -19,8 +19,8 @@ body {
 
 h1 {
     color: #40189D;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 60px;
+    font-weight: 900;
 }
 
 h2 {
@@ -103,4 +103,40 @@ p {
     font-weight: bold;
     cursor: pointer;
     margin-top: 40px;
+}
+
+#multiplication-table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #E4F2FF;
+}
+
+#multiplication-table h2 {
+    margin-bottom: 1rem;
+}
+
+#multiplication-operations {
+    width: 100%;
+    max-width: 247px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#multiplication-operations .row {
+    width: 100%;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.row .operation,
+.result {
+    font-size: 20px;
 }
