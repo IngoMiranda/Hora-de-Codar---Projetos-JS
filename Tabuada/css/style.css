@@ -111,6 +111,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 15px;
     padding: 1rem;
     background-color: #E4F2FF;
 }
@@ -129,14 +130,18 @@ p {
 }
 
 #multiplication-operations .row {
-    width: 100%;
+    width: 150px;
     padding: 0.3rem;
     display: flex;
     justify-content: center;
     gap: 0.3rem;
 }
 
-.row .operation,
+#multiplication-operations .result {
+    margin-left: 0.5rem;
+}
+
+.operation,
 .result {
     font-size: 20px;
 }
