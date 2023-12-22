@@ -23,7 +23,8 @@ h1 {
     font-weight: 900;
 }
 
-h2 {
+h2,
+span {
     color: #40189D;
     font-size: 24px;
     font-weight: bold;
