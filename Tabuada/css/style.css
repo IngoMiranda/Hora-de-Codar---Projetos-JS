@@ -130,16 +130,12 @@ p {
     flex-direction: column;
 }
 
-#multiplication-operations .row {
+.row {
     width: 150px;
     padding: 0.3rem;
     display: flex;
     justify-content: center;
     gap: 0.3rem;
-}
-
-#multiplication-operations .result {
-    margin-left: 0.5rem;
 }
 
 .operation,

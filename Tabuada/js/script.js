@@ -15,21 +15,19 @@ const createTable = (number, multiplicatorNumber) => {
     for (i = 1; i <= multiplicatorNumber; i++) {
         const result = number * i
 
-        const tamplate = `<div class="row">
-                <div class="operation">${number} x ${i}</div>
-                <di class="result">${result}</di>
-            </div>`;
-
+        const template = `<div class="row"> <div class="operation">${number} x ${i} = </div> <div class="result">${result}</div></div>`;
 
         const parser = new DOMParser(); //função permite que converta para HTML
-        const tamplateParser = parser.parserFromString(tamplate, "text/html"); //retornando um HTMLDocument ou XMLDocument.
+        const templateParser = parser.parseFromString(template, "text/html"); //retornando um HTMLDocument ou XMLDocument.
 
-        const row = tamplateParser.querySelector(".row");
-        multiplicationTable.appendChild(row);
+        const row = templateParser.querySelector(".row");
 
-        console.log(result);
-    }
-}
+        multiplicationOperation.appendChild(row);
+        console.log(row);
+
+
+    };
+};
 
 // eventos
 
